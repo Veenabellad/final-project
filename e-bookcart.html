@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryLand - Kid Story Book Store</title>
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b0b41;
+        }
+
+        header {
+            background-color: rgb(37, 113, 128);
+            color: #fff;
+            padding: 15px 0;
+            background-image: url("./rr.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .group {
+            display: flex;
+            line-height: 28px;
+            align-items: center;
+            position: relative;
+            max-width: 800px;
+            margin-left: 450px ;
+        }
+
+        .input {
+            font-family: "Montserrat", sans-serif;
+            width: 100%;
+            height: 45px;
+            padding-left: 2.5rem;
+            box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #000;
+            border: 0;
+            border-radius: 12px;
+            background-color: #16171d;
+            outline: none;
+            color: #bdbecb;
+            transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+            cursor: text;
+            z-index: 0;
+        }
+        
+
+        .input::placeholder {
+            color: #bdbecb;
+        }
+
+        .input:hover {
+            box-shadow: 0 0 0 2.5px #2f303d, 0px 0px 25px -15px #000;
+        }
+
+        .input:active {
+            transform: scale(0.95);
+        }
+
+        .input:focus {
+            box-shadow: 0 0 0 2.5px #2f303d;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            fill: #bdbecb;
+            width: 1rem;
+            height: 1rem;
+            pointer-events: none;
+            z-index: 1;
+        }
+        header button{
+            height: 50px;
+            width:100px;
+            border-radius: 5px;
+            background-color: rgb(97, 59, 148);
+            color: white;
+
+        }
+        header button a{
+            color:white
+        }
+        header 
+
+        header h1 {
+            margin: 20px;
+            padding-right: 9999px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        .hero {
+            background-color: rgb(17, 16, 14);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h2 {
+            margin-top: 0;
+            font-family: "Butterfly Kids", cursive;
+            font-weight: 400;
+            font-size: 80px;
+            font-style: normal;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin: 10px 0 20px;
+        }
+
+        .btn {
+            background-color: #23798f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #238396;
+        }
+
+        .book-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: rgb(192, 102, 56);
+        }
+
+        .book-section h2 {
+            margin-bottom: 30px;
+        }
+
+        .book-list {
+            height: max-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .book {
+            background-color: #e0abab;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .book img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .book h3 {
+            font-size: 20px;
+            margin: 15px 0 10px;
+        }
+
+        .book p {
+            font-size: 18px;
+            margin: 0;
+            color: #ff006e;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.733);
+            padding: 10px;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>StoryLand</h1>
+        <div class="group">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                <g>
+                    <path
+                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                    </path>
+                </g>
+            </svg>
+
+            <input id="query" class="input" type="search" placeholder="Search..." name="searchbar" />
+        </div>
+        <button><a href="registerr.html" alt="">register</a></button>
+        <button><a href="loginn.html" alt="">login</a></button>
+       
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="hero">
+        <h2>Explore Magical Stories for Kids</h2>
+        <p>Discover a world of imagination with our collection of children’s storybooks!</p>
+        <a href="#books" class="btn">See Here &downarrow;</a>
+    </section>
+
+    <!-- Book Listings -->
+    <section id="books" class="book-section">
+        <h2>Popular Storybooks</h2>
+        <div class="book-list">
+            <div class="book">
+                <img src="./v1.jpeg" alt="The Magical Forest">
+                <h3>The Magical Forest</h3>
+                <a href="s1.pdf" class="btn">Read Now</a>
+            </div>
+            <div class="book">
+                <img src="./v2.jpeg" alt="Adventures of Tom">
+                <h3>Adventures of Tom Sawyer</h3>
+                <a href="#" class="btn">Read Now</a>
+            </div>
+            <div class="book">
+                <img src="./v3.jpeg" alt="Princess and the Castle">
+                <h3>Princess and the Castle</h3>
+                <a href="#" class="btn">Read Now</a>
+            </div>
+            <div class="book">
+                <img src="./v4.jpeg" alt="Princess and the Castle">
+                <h3>When Do Hippos Play</h3>
+                <a href="#" class="btn">Read Now</a>
+            </div>
+            <div class="book">
+                <img src="v5.jpeg" alt="Princess and the Castle">
+                <h3>Beauty and the Beast</h3>
+                <a href="#" class="btn">Read Now</a>
+            </div>
+            <div class="book">
+                <img src="./v6.jpeg" alt="Princess and the Castle">
+                <h3>Jack And The Bean Stalk</h3>
+                <a href="#" class="btn">Read Now</a>
+            </div>
+            <div class="book">
+                <img src="./pac.jpg" alt="">
+                <h3>Princess and the Castle</h3>
+                <a href="#" class="btn">Read Now</a>
+            </div>
+            <div class="book">
+                <img src="./v7.jpeg" alt="Princess and the Castle">
+                <h3>Famous Tales Of Panchtantra</h3>
+                <a href="#" class="btn">Read Now</a>
+            </div>
+            <div class="book">
+                <img src="./v8.jpeg" alt="Princess and the Castle">
+                <h3>Famous illustrated Tale Of Premchand</h3>
+                <a href="#" class="btn">Read Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 StoryLand. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
